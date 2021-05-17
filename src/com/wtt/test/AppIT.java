@@ -18,9 +18,9 @@ public class AppIT {
 	
 	@BeforeTest
 	public void setUp() throws MalformedURLException {
-		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-		capabilities.setPlatform(Platform.WINDOWS);
-		driver = new RemoteWebDriver(new URL("http://192.168.43.253:5555/wd/hub"), capabilities);
+		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+		capabilities.setPlatform(Platform.LINUX);
+		driver = new RemoteWebDriver(new URL("http://selenium.engazewell.com/wd/hub"),capabilities);
 		System.out.println("connected...............");
 	}
 

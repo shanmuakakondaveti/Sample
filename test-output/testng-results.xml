@@ -2,47 +2,118 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-16T20:25:35 IST" name="Default suite" finished-at="2021-05-16T20:25:36 IST" duration-ms="1278">
+  <suite started-at="2021-05-17T10:04:05 IST" name="Default suite" finished-at="2021-05-17T10:04:06 IST" duration-ms="885">
     <groups>
     </groups>
-    <test started-at="2021-05-16T20:25:35 IST" name="Default test" finished-at="2021-05-16T20:25:36 IST" duration-ms="1278">
+    <test started-at="2021-05-17T10:04:05 IST" name="Default test" finished-at="2021-05-17T10:04:06 IST" duration-ms="885">
       <class name="com.wtt.test.AppIT">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.wtt.test.AppIT@27ff5d15]" started-at="2021-05-16T20:25:35 IST" name="setUp" finished-at="2021-05-16T20:25:36 IST" duration-ms="1176" status="FAIL">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.wtt.test.AppIT@27ff5d15]" started-at="2021-05-17T10:04:05 IST" name="setUp" finished-at="2021-05-17T10:04:06 IST" duration-ms="808" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Error forwarding the new session Empty pool of VM for setup Capabilities {browserName: chrome, platform: WINDOWS, version: 3.141.59}
-Command duration or timeout: 232 milliseconds]]>
+              <![CDATA[Unable to parse remote response: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Error forwarding the new session Empty pool of VM for setup Capabilities {browserName: chrome, platform: WINDOWS, version: 3.141.59}
-Command duration or timeout: 232 milliseconds
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
-at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+              <![CDATA[org.openqa.selenium.WebDriverException: Unable to parse remote response: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
 at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
 at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
 at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
-at com.wtt.test.AppIT.setUp(AppIT.java:24)
+at com.wtt.test.AppIT.setUp(AppIT.java:23)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -67,87 +138,131 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session Empty pool of VM for setup Capabilities {browserName: chrome, platform: WINDOWS, version: 3.141.59}
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: <. Last 1 characters read: <
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'DESKTOP-CAEGAEQ', ip: '172.28.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: driver.version: unknown
-at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:118)
-at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:85)
-at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:69)
-at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
-at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:865)
-at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
-at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
-at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
-at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1340)
-at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
-at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
-at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1242)
-at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-at org.seleniumhq.jetty9.server.Server.handle(Server.java:503)
-at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:364)
-at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:260)
-at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
-at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:103)
-at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
-at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
-at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
-at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
-at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
-at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
-at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
-at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
-at java.lang.Thread.run(Thread.java:748)
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+at org.openqa.selenium.json.Json.toType(Json.java:69)
+at org.openqa.selenium.json.Json.toType(Json.java:55)
+at org.openqa.selenium.json.Json.toType(Json.java:50)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+... 31 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="simpleTest()[pri:0, instance:com.wtt.test.AppIT@27ff5d15]" started-at="2021-05-16T20:25:36 IST" name="simpleTest" finished-at="2021-05-16T20:25:36 IST" duration-ms="0" status="SKIP">
+        <test-method signature="simpleTest()[pri:0, instance:com.wtt.test.AppIT@27ff5d15]" started-at="2021-05-17T10:04:06 IST" name="simpleTest" finished-at="2021-05-17T10:04:06 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Error forwarding the new session Empty pool of VM for setup Capabilities {browserName: chrome, platform: WINDOWS, version: 3.141.59}
-Command duration or timeout: 232 milliseconds]]>
+              <![CDATA[Unable to parse remote response: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Error forwarding the new session Empty pool of VM for setup Capabilities {browserName: chrome, platform: WINDOWS, version: 3.141.59}
-Command duration or timeout: 232 milliseconds
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
-at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+              <![CDATA[org.openqa.selenium.WebDriverException: Unable to parse remote response: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
 at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
 at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
 at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
-at com.wtt.test.AppIT.setUp(AppIT.java:24)
+at com.wtt.test.AppIT.setUp(AppIT.java:23)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -172,52 +287,25 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session Empty pool of VM for setup Capabilities {browserName: chrome, platform: WINDOWS, version: 3.141.59}
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: <. Last 1 characters read: <
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'DESKTOP-CAEGAEQ', ip: '172.28.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: driver.version: unknown
-at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:118)
-at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:85)
-at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:69)
-at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
-at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:865)
-at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
-at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
-at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
-at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1340)
-at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
-at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
-at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1242)
-at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-at org.seleniumhq.jetty9.server.Server.handle(Server.java:503)
-at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:364)
-at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:260)
-at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
-at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:103)
-at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
-at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
-at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
-at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
-at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
-at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
-at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
-at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
-at java.lang.Thread.run(Thread.java:748)
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+at org.openqa.selenium.json.Json.toType(Json.java:69)
+at org.openqa.selenium.json.Json.toType(Json.java:55)
+at org.openqa.selenium.json.Json.toType(Json.java:50)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+... 31 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- simpleTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.wtt.test.AppIT@27ff5d15]" started-at="2021-05-16T20:25:36 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1621176936791" status="SKIP">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.wtt.test.AppIT@27ff5d15]" started-at="2021-05-17T10:04:06 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1621226046483" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
