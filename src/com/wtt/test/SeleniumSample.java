@@ -43,22 +43,17 @@ public class SeleniumSample{
 		driver.quit();
 	}
 
-	@Test
+	@Test(priority = 1)
 	public void simpleTest() {
 		// Launch website  
-		driver.navigate().to("https://www.javatpoint.com"); 
+		driver.navigate().to("https://www.Javatpoint.com"); 
 
-		//enter text in search box
-		WebElement element=driver.findElement(By.xpath("/html/body/div/div/div[3]/div/ul/li[2]/a"));
-		element.click();
-		WebElement nextButton=driver.findElement(By.xpath("/html/body/div[1]/div/div[6]/div[3]/div[1]/table/tbody/tr/td/div[1]/a"));
-		String text = nextButton.getText();
-		System.out.println("Simple test():"+text);
-		Assert.assertEquals("Next", text);
+		
+		Assert.assertEquals("Tutorials List - Javatpoint", driver.getTitle());
 	}
 
 
-	@Test(priority = 1)
+	@Test(priority = 2)
 	public void testCheckBox() {
 		driver.navigate().to("https://www.javatpoint.com");
 
@@ -72,7 +67,7 @@ public class SeleniumSample{
 	}
 
 
-	@Test
+	@Test(priority = 3)
 	public void checkLink() { 
 		driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[3]/center/input[1]")).submit();
 

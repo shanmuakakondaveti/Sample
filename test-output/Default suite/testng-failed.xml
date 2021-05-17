@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.wtt.test.AppIT">
+      <class name="com.wtt.test.SeleniumSample">
         <methods>
-          <include name="simpleTest"/>
-          <include name="afterTest"/>
+          <include name="setupBeforeSuite"/>
           <include name="setUp"/>
+          <include name="testCheckBox"/>
+          <include name="afterTest"/>
+          <include name="checkLink"/>
         </methods>
-      </class> <!-- com.wtt.test.AppIT -->
+      </class> <!-- com.wtt.test.SeleniumSample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
