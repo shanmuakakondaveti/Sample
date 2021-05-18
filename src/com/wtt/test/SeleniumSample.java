@@ -35,7 +35,7 @@ public class SeleniumSample{
 		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 		capabilities.setPlatform(Platform.LINUX);
 		driver = new RemoteWebDriver(new URL("http://selenium.engazewell.com/wd/hub"), capabilities);
-		System.out.println("driver loaded..........");
+		System.out.println("driver loaded........................");
 	}
 
 	@AfterTest
