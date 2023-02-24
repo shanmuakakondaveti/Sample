@@ -24,7 +24,7 @@ public class AppIT2 {
 		capabilities.setPlatform(Platform.WIN10);
 		capabilities.setVersion("10.0");
 		driver=new RemoteWebDriver(new URL("http://192.168.43.253:5555/grid/register"),capabilities);
-		System.out.println("connected......");
+		System.out.println("connected..........");
 
 		// Launch website  
 		driver.navigate().to("http://www.google.com/");  
